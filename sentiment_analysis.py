@@ -33,8 +33,8 @@ def wordcloud_draw(data, color = 'black'):
                             ])
     wordcloud = WordCloud(stopwords=STOPWORDS,
                       background_color=color,
-                      width=2500,
-                      height=2000
+                      width=2400,
+                      height=1900
                      ).generate(cleaned_word)
     plt.figure(1,figsize=(13, 13))
     plt.imshow(wordcloud)
